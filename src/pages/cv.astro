@@ -1,5 +1,4 @@
 ---
-import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
 import { CV } from "@consts";
@@ -7,12 +6,65 @@ import CVCard from "@components/CVCard.astro";
 
 // TO Modify
 const works = [
-  {company:"Company A", time: "2022-Present", job_title: "Research Scientist", location: "London, UK", description: "Your Notes about the job"},
-  {company:"Company A", time: "2022-Present", job_title: "Research Scientist", location: "London, UK", description: "Your Notes about the job"},
-]
+  {
+    company: "City College of New York, CUNY",
+    time: "2018-Present",
+    job_title: "Research Assistant Professor, Earth & Atmospheric Sciences",
+    location: "New York, NY",
+    description:
+      "Lead microwave remote sensing research on wetlands, surface hydrology, and the carbon cycle; principal investigator on NASA ECOSTRESS urban forest water stress studies and co-investigator on NISAR, SMAP, and CYGNSS collaborations while mentoring graduate and undergraduate researchers.",
+  },
+  {
+    company: "CUNY Advanced Science Research Center",
+    time: "2021-Present",
+    job_title: "Affiliate Professor, Environmental Initiative",
+    location: "New York, NY",
+    description:
+      "Integrate satellite observations with urban climate resilience partnerships, connecting CUNY expertise with city agencies on environmental health questions.",
+  },
+  {
+    company: "Jet Propulsion Laboratory, Caltech",
+    time: "2016",
+    job_title: "Visiting Research Faculty",
+    location: "Pasadena, CA",
+    description:
+      "Supported NISAR validation strategies and synthetic aperture radar applications for surface hydrology while collaborating with mission scientists.",
+  },
+  {
+    company: "City College of New York, CUNY",
+    time: "2012-2016",
+    job_title: "Postdoctoral Research Scientist",
+    location: "New York, NY",
+    description:
+      "Developed soil moisture retrieval and freeze/thaw monitoring algorithms for NASA SMAP and Arctic Boreal Vulnerability Experiment (ABoVE) campaigns.",
+  },
+];
 const educations = [
-  {school:"University 1", time: "2022-Present", job_title: "BEng in Electronic Information Engineering", location: "London, UK", description: "Your Notes about the study"},
-]
+  {
+    school: "The Graduate Center, CUNY",
+    time: "2008-2012",
+    job_title: "Ph.D., Earth and Environmental Sciences",
+    location: "New York, NY",
+    description:
+      "Dissertation on monitoring surface melt processes on ice sheets under the supervision of Prof. Marco Tedesco.",
+  },
+  {
+    school: "The City College of New York, CUNY",
+    time: "2005-2007",
+    job_title: "M.A., Earth and Atmospheric Sciences",
+    location: "New York, NY",
+    description:
+      "Focused on applying remote sensing approaches to hydrological process studies.",
+  },
+  {
+    school: "University of Colorado, Boulder",
+    time: "2000-2004",
+    job_title: "B.A., Arts and Sciences",
+    location: "Boulder, CO",
+    description:
+      "Interdisciplinary coursework across environmental science and geography.",
+  },
+];
 ---
 
 <Layout title={CV.TITLE} description={CV.DESCRIPTION}>

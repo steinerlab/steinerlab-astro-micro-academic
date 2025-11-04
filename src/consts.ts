@@ -1,46 +1,49 @@
 import type { Metadata, Site } from "@types";
 
 export const SITE: Site = {
-  TITLE: "Astro Micro Academics",
-  DESCRIPTION: "Astro Micro Academics is for academic user.",
-  EMAIL: "youremial@gmail.com",
+  TITLE: "Steiner Lab",
+  DESCRIPTION:
+    "Remote sensing of wetlands, surface hydrology, and the carbon cycle at The City College of New York.",
+  EMAIL: "nsteiner@ccny.cuny.edu",
   NUM_POSTS_ON_HOMEPAGE: 2,
   NUM_PUBLICATIONS_ON_HOMEPAGE: 3,
-  SITEURL: 'https://astro-micro-academic.vercel.app' // Update here to link the RSS icon to your website rss
+  SITEURL: "https://steinerlab.github.io/homepage", // Update here to link the RSS icon to your website rss
 };
 
-export const HIGHLIGHTAUTHOR = "John B"
+export const HIGHLIGHTAUTHOR = "Nicholas C. Steiner";
 
 export const HOME: Metadata = {
   TITLE: "Home",
-  DESCRIPTION: "Astro Micro is an accessible theme for Astro.",
+  DESCRIPTION:
+    "Updates from Nicholas Steiner’s remote sensing group in the Department of Earth and Atmospheric Sciences at CCNY.",
 };
 
 export const BLOG: Metadata = {
   TITLE: "Blog",
-  DESCRIPTION: "A collection of articles on topics I am passionate about.",
+  DESCRIPTION:
+    "Field notes and perspectives on microwave remote sensing, hydrology, and the carbon cycle.",
 };
 
 export const RESEARCH: Metadata = {
   TITLE: "Publications",
   DESCRIPTION:
-    "A collection of my publications with links to paper, repositories and live demos.",
+    "Selected publications spanning radar remote sensing, surface hydrodynamics, and wetland monitoring.",
 };
 
 export const CV: Metadata = {
   TITLE: "CV",
   DESCRIPTION:
-    "your cv",
+    "Curriculum vitae for Nicholas Steiner, Research Assistant Professor at The City College of New York.",
 };
 
 export const TAGS: Metadata = {
-  TITLE: "TAGS",
+  TITLE: "Tags",
   DESCRIPTION:
-    "blog tag filter",
+    "Browse writing by topic across remote sensing, hydrology, and applied Earth observation.",
 };
 
 export const ABOUT: Metadata = {
-  TITLE: "ABOUT",
+  TITLE: "About",
   DESCRIPTION:
-    "A self-intro",
+    "Learn about Nicholas Steiner and the Steiner Lab’s work on satellite remote sensing of terrestrial systems.",
 };

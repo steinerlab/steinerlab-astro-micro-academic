@@ -25,45 +25,31 @@ const publications: CollectionEntry<"publications">[] = (
   <Container>
     <aside data-pagefind-ignore>
       <h1 class="animate font-semibold text-black dark:text-white">
-        Astro Micro Academics 🍄
+        Steiner Lab | Remote Sensing of Terrestrial Hydrology
       </h1>
       <div class="space-y-16">
         <section>
           <article class="space-y-4">
             <span class="animate">
               <p>
-                Astro Micro Academics is a theme for <Link
-                  href="https://astro.build/">Astro</Link
-                > and tailored for academic users and researchers. It's built on <Link href="https://astro.build/themes/details/astro-micro/">Astro Micro</Link> and
-                <Link href="https://github.com/markhorn-dev">
-                  Mark Horn's
-                </Link> popular theme <Link
-                  href="https://astro.build/themes/details/astronano/"
-                  >Astro Nano</Link
-                >. 
+                The Steiner Lab is led by <Link href="https://www.ccny.cuny.edu/profiles/nick-steiner">Nicholas C. Steiner</Link> in the
+                Department of Earth and Atmospheric Sciences at <Link href="https://www.ccny.cuny.edu/eas">The City College of New York</Link>.
+                We study how microwave remote sensing captures terrestrial water and carbon cycle processes across scales.
               </p>
               <p>
-                Micro Academics adds features like <span class="text-red-500">tags, and blog math support</span> and also inherits <Link href="https://pagefind.app/"
-                  >Pagefind</Link
-                > for search, <Link href="https://giscus.app">Giscus</Link> for comments,
-                from Astro Micro. See full changes this <Link
-                  href="/blog/00-academic-astro">here</Link
-                >.
+                Our team develops radar, thermal, and lidar approaches with missions such as
+                <Link href="https://nisar.jpl.nasa.gov/">NASA NISAR</Link>,
+                <Link href="https://smap.jpl.nasa.gov/">SMAP</Link>,
+                <Link href="https://ecostress.jpl.nasa.gov/">ECOSTRESS</Link>, and
+                <Link href="https://www.nasa.gov/mission/cygnss/">CYGNSS</Link>
+                to resolve wetland dynamics, flood hazards, and ecosystem resilience from the Arctic to the Amazon.
               </p>
             </span>
             <span class="animate">
               <p>
-                Micro Academics still comes with everything great about Micro and Nano — full type
-                safety, a sitemap, an RSS feed, and Markdown + MDX support.
-                Styled with TailwindCSS and preconfigured with system, light,
-                and dark themes.
-              </p>
-              <p>
-                Visit
-                <Link href="https://github.com/jingwu2121/astro-micro-academic">
-                  Astro Micro Academics on GitHub
-                </Link>
-                to fork the repository to get started.
+                We pair field campaigns such as SMAPVEX19-22 and WETVEX with physics-based modeling and open data
+                pipelines to deliver decision-ready environmental intelligence. Reach out if you are interested in
+                collaborating or joining the lab’s research efforts.
               </p>
             </span>
             
@@ -71,7 +57,8 @@ const publications: CollectionEntry<"publications">[] = (
         </section>
 
         <section class="animate space-y-2 border-2 border-red-800 text-red-800 dark:border-red-400 border-dashed p-2 dark:text-red-400">
-          📢📢 Your important Information (Open for job/Recruiting students)
+          📢📢 Interested in ECOSTRESS, NISAR, or NYC urban forest resilience projects?
+          Email <Link href="mailto:nsteiner@ccny.cuny.edu">nsteiner@ccny.cuny.edu</Link> to discuss student collaborations and data partnerships.
         </section>
 
         <section class="animate space-y-6">
@@ -81,8 +68,8 @@ const publications: CollectionEntry<"publications">[] = (
             </h4>
             <article>
               <p>
-                If you want to get in touch with me about something or just to say
-                hi, reach out on social media or send me an email.
+                We enjoy teaming with municipal agencies, NASA centers, and academic collaborators.
+                Connect with Nick to talk about remote sensing campaigns, open datasets, or mentoring opportunities for students.
               </p>
             </article>
             <SocialIcons icon_size={'text-3xl'} />
@@ -96,8 +83,10 @@ const publications: CollectionEntry<"publications">[] = (
             </h2>
           </div>
           <ul class="not-prose flex flex-col gap-4">
-            <li>3D Vision</li>
-            <li>AIGC</li>
+            <li>Microwave radar and radiometry for surface hydrology</li>
+            <li>Flood and wetland dynamics using SAR, CYGNSS, and lidar fusion</li>
+            <li>Urban ecosystem water stress mapping with ECOSTRESS and UAVSAR</li>
+            <li>Cryosphere change and carbon cycle feedbacks in Arctic and alpine systems</li>
           </ul>
         </section>
         
@@ -108,11 +97,17 @@ const publications: CollectionEntry<"publications">[] = (
             </h2>
           </div>
           <ul class="not-prose flex flex-col gap-4 overflow-y-auto max-h-[150px] scroll_bar">
-            <li>[06/2024]: Your News1</li>
-            <li>[06/2024]: Your <span class="text-red-600">News2</span></li>
-            <li>[06/2024]: Your <span class="text-red-600">News2</span></li>
-            <!-- <li>[06/2024]: Your <span class="text-red-600">News2</span></li>
-            <li>[06/2024]: Your <span class="text-red-600">News2</span></li> -->
+            <li>
+              [2025]: IEEE JSTARS paper on <span class="text-red-600 font-medium">L-band forest scattering</span> with GNSS signals is out.
+              <Link href="https://ieeexplore.ieee.org/document/10850750">Read the article</Link>.
+            </li>
+            <li>
+              [2024]: Authorea preprint on <span class="text-red-600 font-medium">near-real-time flood mapping</span> using multi-source SAR is available.
+              <Link href="https://nicksteiner.github.io/publication/yang-2024-near/">Access the preprint</Link>.
+            </li>
+            <li>
+              [2023]: The MSSM/CUNY Climate Change Health Impact Initiative backs our work on West Nile virus risk modeling across New York City.
+            </li>
           </ul>
         </section>
 

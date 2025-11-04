@@ -1,9 +1,9 @@
 ---
-import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
 import { ABOUT } from "@consts";
 import Image from "astro/components/Image.astro";
+import Link from "@components/Link.astro";
 ---
 
 <Layout title={ABOUT.TITLE} description={ABOUT.DESCRIPTION}>
@@ -14,10 +14,21 @@ import Image from "astro/components/Image.astro";
           About
         </div>
         <section class="animate not-prose flex flex-col gap-4 text-justify">
-          <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores porro hic minima incidunt explicabo obcaecati consectetur consequuntur at quisquam commodi.
-          </p>      
-          
-          <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores porro hic minima incidunt explicabo obcaecati consectetur consequuntur at quisquam commodi.
+          <p class="text-justify">
+            Nicholas C. Steiner is a Research Assistant Professor in the
+            <Link href="https://www.ccny.cuny.edu/eas">Department of Earth and Atmospheric Sciences at The City College of New York</Link>.
+            His work advances microwave remote sensing of wetlands, terrestrial hydrology, and the carbon cycle with an emphasis on translating satellite observations into decision-ready environmental intelligence.
+          </p>
+
+          <p class="text-justify">
+            Nick leads and contributes to <Link href="https://www.nasa.gov/directorates/earth-science/">NASA Earth Science</Link> projects that harness missions such as
+            NISAR, SMAP, ECOSTRESS, CYGNSS, and GEDI. His team develops multi-sensor approaches that combine radar, radiometry, lidar, and thermal data to monitor inundation dynamics, quantify vegetation water stress, and track cryosphere change from the Arctic to the Amazon.
+          </p>
+
+          <p class="text-justify">
+            He collaborates closely with partners at NASA’s Jet Propulsion Laboratory, the Advanced Science Research Center at CUNY, and municipal stakeholders in New York City.
+            Field campaigns like SMAPVEX19-22 and the NISAR Tropical Wetlands Validation Experiment inform the lab’s modeling frameworks and open datasets.
+            Nick mentors graduate and undergraduate researchers through project-based learning, including the SUS7502C capstone and quantitative methods courses focused on geospatial data.
           </p>
         </section>
 
@@ -25,26 +36,30 @@ import Image from "astro/components/Image.astro";
           <div class="my-10 text-center">
             <div class="bg-neutral-300 w-[350px] h-[250px] object-cover rounded-xl -rotate-6 overflow-hidden">
               <Image
-                src={'/astro-nano.png'}
-                alt={'life2'}
+                src={'/paper-teaser.jpg'}
+                alt={'False-color remote sensing composite used in Steiner Lab analyses.'}
                 width={350}
                 height={250}
                 class="w-[350px] h-[250px] object-cover rounded-xl overflow-hidden"
               />
             </div>
-            <p class="mt-4 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+            <p class="mt-4 text-sm">
+              Multi-sensor composites help quantify wetland inundation dynamics and vegetation structure.
+            </p>
           </div>
           <div class="mx-10 my-10 text-center">
             <div class="bg-neutral-300 w-[150px] h-[250px] object-cover rounded-xl rotate-6 mx-auto sm:ml-auto">
               <Image
-                src={'/astro-micro.jpg'}
-                alt={'life2'}
+                src={'/astro-sphere.jpg'}
+                alt={'Synthetic aperture radar flight line over urban canopy.'}
                 width={150}
                 height={250}
                 class="w-[150px] h-[250px] object-cover rounded-xl "
               />
             </div>
-            <p class="mt-4 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="mt-4 text-sm">
+              UAVSAR and ECOSTRESS observations underpin our work on urban forest heat mitigation in New York City.
+            </p>
           </div>
         </div>
       </div>
