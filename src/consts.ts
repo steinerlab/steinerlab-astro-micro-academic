@@ -3,7 +3,7 @@ import type { Metadata, Site } from "@types";
 export const SITE: Site = {
   TITLE: "Steiner Lab",
   DESCRIPTION:
-    "Remote sensing of wetlands, floods, and urban forests through flagship NASA projects including NISAR, HiFLOWS, and ECOSTRESS at The City College of New York.",
+    "Remote sensing of wetlands, floods, and urban forests through NASA projects including NISAR, HiFLOWS, and ECOSTRESS at The City College of New York.",
   EMAIL: "nsteiner@ccny.cuny.edu",
   NUM_POSTS_ON_HOMEPAGE: 2,
   NUM_PUBLICATIONS_ON_HOMEPAGE: 3,
@@ -15,7 +15,7 @@ export const HIGHLIGHTAUTHOR = "Nicholas C. Steiner";
 export const HOME: Metadata = {
   TITLE: "Home",
   DESCRIPTION:
-    "Flagship updates on the Steiner Lab's NASA NISAR, HiFLOWS, and ECOSTRESS projects advancing remote sensing of water and urban resilience.",
+    "Updates on the Steiner Lab's NASA NISAR, HiFLOWS, and ECOSTRESS projects advancing remote sensing of water and urban resilience.",
 };
 
 export const BLOG: Metadata = {
