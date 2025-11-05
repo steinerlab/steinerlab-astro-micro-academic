@@ -1,7 +1,7 @@
----
+import type { HTMLAttributes } from "astro/types";
 import { cn } from "@lib/utils";
 
-type Props = {
+type Props = Omit<HTMLAttributes<"a">, "href"> & {
   href: string;
   external?: boolean;
   underline?: boolean;
@@ -14,7 +14,7 @@ const {
   underline = true,
   group = false,
   ...rest
-} = Astro.props;
+} = Astro.props as Props;
 
 const isExternal = external ?? /^(https?:)?\/\//.test(href);
 const isAbsoluteInternal = !isExternal && href?.startsWith("/");
