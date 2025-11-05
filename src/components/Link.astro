@@ -15,9 +15,7 @@ const {
   group = false,
   ...rest
 } = Astro.props;
----
 
----
 const isExternal = external ?? /^(https?:)?\/\//.test(href);
 const isAbsoluteInternal = !isExternal && href?.startsWith("/");
 const resolvedHref = isAbsoluteInternal
