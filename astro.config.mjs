@@ -13,7 +13,7 @@ import pagefind from "astro-pagefind";
 // https://astro.build/config
 export default defineConfig({
   site: "https://steinerlab.github.io/steinerlab",
-  base: "/steinerlab",
+  base: "/",
   integrations: [tailwind(), sitemap(), mdx(), pagefind()],
   markdown: {
     shikiConfig: {
